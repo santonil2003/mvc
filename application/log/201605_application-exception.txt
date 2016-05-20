@@ -1,0 +1,13 @@
+
+2016/05/20 16:47:05  [From /var/www/html/php/vendor/Core/classes/Application.php, Line 75]
+test
+2016/05/20 16:47:05  [From /var/www/html/php/vendor/Core/classes/Application.php, Line 76]
+#0 /var/www/html/php/vendor/Core/classes/Application.php(68): indexController->indexAction()
+#1 /var/www/html/php/application/index.php(29): Application->run('/var/www/html/p...')
+#2 {main}
+2016/05/20 16:47:15  [From /var/www/html/php/vendor/Core/classes/Application.php, Line 75]
+test
+2016/05/20 16:47:15  [From /var/www/html/php/vendor/Core/classes/Application.php, Line 76]
+#0 /var/www/html/php/vendor/Core/classes/Application.php(68): indexController->indexAction()
+#1 /var/www/html/php/application/index.php(29): Application->run('/var/www/html/p...')
+#2 {main}
