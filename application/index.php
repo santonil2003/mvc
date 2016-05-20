@@ -1,6 +1,6 @@
 <?php
 
-defined('DEBUG') or define('DEBUG', false);
+defined('DEBUG') or define('DEBUG', true);
 defined('ENV') or define('ENV', 'dev');
 
 

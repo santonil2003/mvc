@@ -15,7 +15,6 @@ class indexController extends BaseController {
 
     public function indexAction() {
       
-      throw new exception("test");
       $book = R::dispense( 'book' );
       $book->title = "Nodejs";
       $book->description = "Server side javascript";
