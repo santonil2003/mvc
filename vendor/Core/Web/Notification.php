@@ -1,5 +1,6 @@
 <?php
-namespace Core\MVC;
+namespace Core\Web;
+
 /**
  * Notification class for flash messege
  * @package Model

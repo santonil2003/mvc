@@ -1,10 +1,18 @@
 <?php
-namespace Core\MVC;
+
+namespace Core\Web;
+
+use Core\Helper\Import;
+
+Import::once(REDBEANS_PATH);
+
+
+
 /**
  * base model
  * @author sanil shrestha <web.developer.sanil@gmail.com>
  */
-class BaseModel{
+class BaseModel {
 
     /**
      * database object

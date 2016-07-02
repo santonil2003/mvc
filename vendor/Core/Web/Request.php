@@ -1,5 +1,7 @@
 <?php
-namespace Core\MVC;
+
+namespace Core\Web;
+
 /**
  * Request class
  * @package model
@@ -15,7 +17,7 @@ class Request {
      */
     public static function createUrl($controller = "", $action = "", array $params = array()) {
 
-        $urlParams = "";
+        $urlParams = "?";
 
         foreach ($params as $key => $value) {
             $urlParams.="&$key=$value";
@@ -27,9 +29,22 @@ class Request {
             $action = DEFAULT_ACTION;
         }
 
-        $url = 'index.php?controller=' . $controller . '&action=' . $action . $urlParams;
+        $url = 'index.php/' . $controller . '/' . $action . $urlParams;
 
         return $url;
+    }
+
+    private static function getPathInfo($index) {
+        $pathInfo = array();
+
+        if (isset($_SERVER['PATH_INFO'])) {
+            $pathInfo = explode('/', trim($_SERVER['PATH_INFO'], ' \/'));
+        }
+
+        $pathInfo['controller'] = isset($pathInfo[0]) ? $pathInfo[0] : DEFAULT_CONTROLLER;
+        $pathInfo['action'] = isset($pathInfo[1]) ? $pathInfo[1] : DEFAULT_ACTION;
+
+        return $pathInfo[$index];
     }
 
     /**
@@ -37,8 +52,7 @@ class Request {
      * @return type
      */
     public static function getController() {
-        $_GET['controller'] = self::getGet('controller', DEFAULT_CONTROLLER);
-        return $_GET['controller'];
+        return self::getPathInfo('controller');
     }
 
     /**
@@ -46,8 +60,7 @@ class Request {
      * @return type
      */
     public static function getAction() {
-        $_GET['action'] = self::getGet('action', DEFAULT_ACTION);
-        return $_GET['action'];
+        return self::getPathInfo('action');
     }
 
     /**

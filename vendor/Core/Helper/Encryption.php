@@ -1,5 +1,7 @@
 <?php
-namespace Core\MVC;
+
+namespace Core\Helper;
+
 /**
  * Encryption class
  * @package model

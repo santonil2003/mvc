@@ -1,7 +1,7 @@
 <?php
 
-use Core\MVC\Debug;
-use Core\MVC\Request;
+use Core\Helper\Debug;
+use Core\Web\Request;
 
 Debug::r($this->data);
 

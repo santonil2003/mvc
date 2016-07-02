@@ -1,6 +1,6 @@
 <?php
 
-namespace Core\MVC;
+namespace Core\Web;
 
 /**
  * Base view

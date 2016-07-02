@@ -1,5 +1,5 @@
 <?php
-namespace Core\MVC;
+namespace Core\Helper;
 /**
  * Debug 
  * @package core

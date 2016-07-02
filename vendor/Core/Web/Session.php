@@ -1,5 +1,7 @@
 <?php
-namespace Core\MVC;
+
+namespace Core\Web;
+
 /**
  * session class
  * @package model
