@@ -1,5 +1,5 @@
 <?php
-
+namespace Core\MVC;
 /**
  * session class
  * @package model

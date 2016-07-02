@@ -12,12 +12,12 @@ defined('DS') or define('DS', DIRECTORY_SEPARATOR);
 /**
  * core base path
  */
-defined('CORE_BASE_PATH') or define('CORE_BASE_PATH', __DIR__);
+defined('CORE_BASE_PATH') or define('CORE_BASE_PATH', __DIR__ . '/..');
 
 /**
  * vendor base path
  */
-defined('VENDOR_BASE_PATH') or define('VENDOR_BASE_PATH', CORE_BASE_PATH.'/..');
+defined('VENDOR_BASE_PATH') or define('VENDOR_BASE_PATH', CORE_BASE_PATH . '/../..');
 
 /**
  * Default controller

@@ -1,5 +1,5 @@
 <?php
-
+namespace Core\MVC;
 /**
  * Request class
  * @package model

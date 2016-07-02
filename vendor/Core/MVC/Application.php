@@ -1,5 +1,9 @@
 <?php
 
+namespace Core\MVC;
+
+include_once 'core-config.php';
+
 /**
  * Application
  * Boot the application
@@ -67,15 +71,14 @@ class Application {
         try {
             $Controller->{$methodName}();
         } catch (Exception $exc) {
-            
-            if(defined('DEBUG') && DEBUG){
-                 Debug::r($exc->getMessage());
-                 Debug::r($exc->getTraceAsString());
+
+            if (defined('DEBUG') && DEBUG) {
+                Debug::r($exc->getMessage());
+                Debug::r($exc->getTraceAsString());
             } else {
                 Debug::l($exc->getMessage(), 'application-exception.txt');
                 Debug::l($exc->getTraceAsString(), 'application-exception.txt');
             }
-           
         }
     }
 

@@ -1,5 +1,5 @@
 <?php
-
+namespace Core\MVC;
 /**
  * base model
  * @author sanil shrestha <web.developer.sanil@gmail.com>

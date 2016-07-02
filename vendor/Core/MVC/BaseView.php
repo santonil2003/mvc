@@ -1,5 +1,7 @@
 <?php
 
+namespace Core\MVC;
+
 /**
  * Base view
  * @author sanil shrestha <web.developer.sanil@gmail.com>

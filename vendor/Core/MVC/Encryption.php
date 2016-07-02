@@ -1,5 +1,5 @@
 <?php
-
+namespace Core\MVC;
 /**
  * Encryption class
  * @package model
